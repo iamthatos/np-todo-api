@@ -30,9 +30,9 @@ MongoClient.connect(url, (err, db) => {
     // });
 
     //// TODO: deleteMany Users
-    users.deleteMany({name: 'Thato'}).then((res) => {
-        console.log(res.result.ok, '     ', res.result.n);
-    });
+    // users.deleteMany({name: 'Thato'}).then((res) => {
+    //     console.log(res.result.ok, '     ', res.result.n);
+    // });
 
     //// TODO: findOneAndDelete Users
     users.findOneAndDelete({_id: new ObjectID('5b83f1aecb602e1b587b7880')}).then((res) => {
